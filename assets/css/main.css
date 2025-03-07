@@ -2687,6 +2687,8 @@ input[type="radio"]:focus + label:before {
 
 /* Image */
 
+
+
 .image {
   border: 0;
   display: inline-block;
@@ -2695,6 +2697,16 @@ input[type="radio"]:focus + label:before {
 
 .image img {
   display: block;
+}
+
+.image.main {
+  display: block;
+  margin: 4rem 0;
+  /* width: 150px;              
+  height: 150px;              */
+  border-radius: 50%;        
+  object-fit: cover;
+  object-position: center;  
 }
 
 .image.left,
@@ -2733,11 +2745,11 @@ input[type="radio"]:focus + label:before {
   width: 100%;
 }
 
-.image.main {
+/* .image.main {
   display: block;
   margin: 4rem 0;
   width: 100%;
-}
+} */
 
 .image.main:first-child {
   margin-top: 0;
@@ -2754,6 +2766,10 @@ input[type="radio"]:focus + label:before {
 
   .image.main {
     margin: 2rem 0;
+    width: 150px;            /* Adjust the width to the desired size */
+    height: 150px;           /* Adjust the height to match the width (square) */
+    border-radius: 50%;      /* This makes the image circular */
+    object-fit: cover; 
   }
 }
 
