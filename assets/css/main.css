@@ -2700,10 +2700,11 @@ input[type="radio"]:focus + label:before {
 }
 
 .image.main {
-  display: block;
-  margin: 4rem 0;
-  /* width: 150px;              
-  height: 150px;              */
+  display: flex;
+  justify-self: center;
+  margin-bottom: 80px;
+  width: 750px;              
+  height: 950px;              
   border-radius: 50%;        
   object-fit: cover;
   object-position: center;  
@@ -2758,6 +2759,11 @@ input[type="radio"]:focus + label:before {
 .image.main img {
   width: 100%;
 }
+
+/* #projects-h2{
+  display: flex;
+  justify-self: center;
+} */
 
 @media screen and (max-width: 736px) {
   .image.fit {
